@@ -1,0 +1,26 @@
+.jumbotron{
+  background-image: linear-gradient(rgb(151, 194, 224),rgb(108, 198, 195),rgb(116, 237, 179));
+  text-align: center;
+  color: rgb(101, 12, 57);
+}
+
+.well{
+  text-align: center;
+  border-style: solid;
+  border: 5 5 5 5;
+  border-radius: 10px;
+  margin top: 10px;
+
+}
+
+.question{
+  text-align: center;
+  border-style: solid;
+  border: 5 5 5 5;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 5px;
+
+}
