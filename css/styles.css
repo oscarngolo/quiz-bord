@@ -30,19 +30,17 @@ body {
   padding: 5px;
 }
 
-label {
-  display: inline;
-}
-
-h3, #next {
+h3, {
   text-align: center;
   display: inline-block;
-  border-radius: 10%;
+
 }
 
 #next {
   color: #bb3444;
   text-decoration: none;
+  border-radius: 10%;
+
 }
 
 #next:hover {
@@ -56,8 +54,12 @@ h3, #next {
   color: #006613;
 }
 
-input[name="option"] {
+input {
   float: left;
+}
+
+#start{
+  margin-top: 300px;
 }
 
 #form {
@@ -67,7 +69,7 @@ input[name="option"] {
 
 .button {
   display: inline-block;
-  padding: 1em;
+  padding: 15px;
   background-color: #79BD9A;
   text-decoration: none;
   color: white;
