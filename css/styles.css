@@ -1,56 +1,78 @@
 body {
-  display: block;
-  margin: 20px;
+    line-height:1;
+    text-align: center;
+    display:block
+    margin: 50px;
 }
 
 .jumbotron{
-  back 
+  background-image: linear-gradient(rgb(151, 194, 224),rgb(108, 198, 195),rgb(116, 237, 179));
+  text-align: center;
+  color: rgb(101, 12, 57);
 }
 
-h1 {
-  font-size: 20vw;
-  font-family: 'Chonburi', cursive;
+.well{
+  text-align: center;
+  border-style: solid;
+  border: 5 5 5 5;
+  border-radius: 10px;
+  margin top: 10px;
+
+}
+
+.question{
+  text-align: center;
+  border-style: solid;
+  border: 5 5 5 5;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 5px;
+  padding: 5px;
 }
 
 
-label {
+label{
   display: inline;
 }
 
 h3, #next {
   text-align: center;
   display: inline-block;
-  border-radius: 10px;
+  border-radius: 10%;
 }
 
 #result {
-  font-family: monospace;
+  font-family: 'Press Start 2P', cursive !important;
   font-weight: bold;
-  font-size: 36;
+  font-size: 45px;
   color: #006613;
 }
 
 input[name="option"] {
-  float: left;
+  float:left;
+
 }
 
-#form div {
-  margin: auto;
+#form div{
+  margin:auto;
   max-width: 205px;
 }
 
+
+
 input, select {
-  vertical-align: middle;
+    vertical-align:middle;
 }
 
 .button {
-  display: inline-block;
-  padding: 1em;
-  background-color: #79BD9A;
-  text-decoration: none !important;
-  color: white !important;
+    display: inline-block;
+    padding: 1em;
+    background-color: #79BD9A;
+    text-decoration: none !important;
+    color: white !important;
 }
-
-body {
+body{
   text-align: center;
 }

@@ -53,8 +53,10 @@ function checkAns() {
 $(document).ready(function() {
 
   $(".jumbotron").hide();
+  $(".well").hide()
   $('#start').click(function() {
     $(".jumbotron").fadeIn();
+    $(".well").fadeIn();
     $(this).hide();
   });
 
