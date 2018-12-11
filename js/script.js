@@ -83,9 +83,8 @@ $(document).ready(function() {
       if (currentquestion == allQuestions.length - 1) {
         $('#next').html("Submit");
         $('#next').click(function() {
-          $(".jumbotron").hide();
           $("#result").html("You correctly answered " + correctAnswers + " out of " + currentquestion + " questions! ").hide();
-          $("#result").fadeIn(1500);
+          $("#result").fadeIn();
         });
 
       };
