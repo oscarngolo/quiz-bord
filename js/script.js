@@ -37,7 +37,7 @@ function setupOptions() {
   var options = allQuestions[currentquestion].choices;
   var formHtml = '';
   for (var i = 0; i < options.length; i++) {
-    formHtml += '<div><input type="radio" name="option" value="' + i + '" id="option' + i + '"><label for="option' + i + '">' +
+    formHtml += '<div><input type="radio" name="option" value="' + i + '" id="option' + i + '"<label for="option' + i + '">' +
       allQuestions[currentquestion].choices[i] + '</label></div><br/>';
   }
   $('#form').html(formHtml);
