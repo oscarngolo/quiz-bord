@@ -73,7 +73,7 @@ $(document).ready(function() {
       if (currentquestion == allQuestions.length - 1) {
         $('#next').html("Submit");
         $('#next').click(function() {
-          $("#result").html("You correctly answered  " + correctAnswers * 20 + " out of " + currentquestion * 20).hide();
+          $("#result").html("You correctly answered  " + correctAnswers * 20 + " out of " + currentquestion * 20);
           $("#result").fadeIn();
         });
 
