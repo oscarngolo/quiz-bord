@@ -60,12 +60,6 @@ $(document).ready(function() {
     $(this).hide();
   });
 
-  $(function() {
-    $("#progressbar").progressbar({
-      max: allQuestions.length - 1,
-      value: 0
-    });
-  });
 
   setupOptions();
 
@@ -73,11 +67,7 @@ $(document).ready(function() {
     event.preventDefault();
     checkAns();
     currentquestion++;
-    $(function() {
-      $("#progressbar").progressbar({
-        value: currentquestion
-      });
-    });
+
     if (currentquestion < allQuestions.length) {
       setupOptions();
       if (currentquestion == allQuestions.length - 1) {
