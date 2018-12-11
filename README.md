@@ -20,6 +20,9 @@ The systems works as you input all your answers on the radio buttons the results
 2. Answer all questions in form provided.
 3. The results of the performance will display after the last submission.
 
+## Links
+
+To access the page go to this link "https://oscarngolo.github.io/quiz-bord/"
 
 ## Author Information
 
