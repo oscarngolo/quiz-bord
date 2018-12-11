@@ -10,19 +10,17 @@ All you need to do after opening the page is to click on the radio buttons on th
 
 ## Running the tests
 
-
 The systems works as you input all your answers on the radio buttons the results of your performance will display at the end of the last submission.
-
 
 ## BDD
 
-1. User should open up the page w.
-2. Answer all questions in form provided.
-3. The results of the performance will display after the last submission.
+1.  User should open up the page w.
+2.  Answer all questions in form provided.
+3.  The results of the performance will display after the last submission.
 
 ## Links
 
-To access the page go to this link "https://oscarngolo.github.io/quiz-bord/"
+To access the page go to this link "<https://oscarngolo.github.io/quiz-bord/>"
 
 ## Author Information
 
