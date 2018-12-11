@@ -14,7 +14,6 @@ All you need to do after opening the page is to click on the radio buttons on th
 The systems works as you input all your answers on the radio buttons the results of your performance will display at the end of the last submission.
 
 
-
 ## BDD
 
 1. User should open up the page w.
