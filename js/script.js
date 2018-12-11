@@ -1,28 +1,93 @@
-function submit() {
-  var score = 0;
-  var numOfQuestions = 5;
-  var ansArr = ['b', 'c', 'a', 'c', 'c'];
+var allQuestions = [{
+    question: "Why use css?",
+    choices: ["it helps make the web page's browser independent.", "it helps create unique web pages.", "it allows for the separation of style and content"],
+    correctAnswer: 2
+  },
 
-  var q1 = document.getElementById('q1').value;
-  var q2 = document.getElementById('q2').value;
-  var q3 = document.getElementById('q3').value;
-  var q4 = document.getElementById('q4').value;
-  var q5 = document.getElementById('q5').value;
+  {
+    question: "What are style sheets used for?",
+    choices: ["to script web pages.", "to control the look and feel of web documents.", "to store the keywords of web pages"],
+    correctAnswer: 1
+  },
 
+  {
+    question: "Select the attribute that organizes the inline styling:",
+    choices: ["style.", "id.", "class."],
+    correctAnswer: 0
+  },
 
-  for (var i = 1; i <= numOfQuestions; i++) {
-    if (eval('q' + i) == '') {
-      alert("you missed question number" + i);
-    }
+  {
+    question: " Where should the style tag be declared to organize an internal CSS? ",
+    choices: ["external file.", "body", "head"],
+    correctAnswer: 2
+  },
+
+  {
+    question: "From the three types of styling, which one is the most useful in terms of website optimization?",
+    choices: ["External", "Inline", "Internal"],
+    correctAnswer: 0
   }
-  for (var i = 1; i <= numOfQuestions; i++) {
-    if (eval('q' + i) == ansArr[i - 1]) {
-      score++;
-    }
+]
+
+var currentquestion = 0;
+var correctAnswers = 0;
+
+function setupOptions() {
+  $('#question').html(parseInt(currentquestion) + 1 + ". " + allQuestions[currentquestion].question);
+  var options = allQuestions[currentquestion].choices;
+  var formHtml = '';
+  for (var i = 0; i < options.length; i++) {
+    formHtml += '<div><input type="radio" name="option" value="' + i + '" id="option' + i + '"><label for="option' + i + '">' +
+      allQuestions[currentquestion].choices[i] + '</label></div><br/>';
   }
-
-  var results = document.getElementById('results')
-  results.innerHTML = "<h2>Your scores " + score + " points out of " + numOfQuestions + "</h2>";
-  alert('Your scores ' + score + " out of " + numOfQuestions)
-
+  $('#form').html(formHtml);
+  $("#option0").prop('checked', true);
 };
+
+function checkAns() {
+  if ($("input[name=option]:checked").val() == allQuestions[currentquestion].correctAnswer) {
+    correctAnswers++;
+  };
+};
+
+$(document).ready(function() {
+
+  $(".jumbotron").hide();
+  $('#start').click(function() {
+    $(".jumbotron").fadeIn();
+    $(this).hide();
+  });
+
+  $(function() {
+    $("#progressbar").progressbar({
+      max: allQuestions.length - 1,
+      value: 0
+    });
+  });
+
+  setupOptions();
+
+  $("#next").click(function() {
+    event.preventDefault();
+    checkAns();
+    currentquestion++;
+    $(function() {
+      $("#progressbar").progressbar({
+        value: currentquestion
+      });
+    });
+    if (currentquestion < allQuestions.length) {
+      setupOptions();
+      if (currentquestion == allQuestions.length - 1) {
+        $('#next').html("Submit");
+        $('#next').click(function() {
+          $(".jumbotron").hide();
+          $("#result").html("You correctly answered " + correctAnswers + " out of " + currentquestion + " questions! ").hide();
+          $("#result").fadeIn(1500);
+        });
+
+      };
+
+    };
+  });
+});

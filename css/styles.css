@@ -1,26 +1,56 @@
+body {
+  display: block;
+  margin: 20px;
+}
+
 .jumbotron{
-  background-image: linear-gradient(rgb(151, 194, 224),rgb(108, 198, 195),rgb(116, 237, 179));
-  text-align: center;
-  color: rgb(101, 12, 57);
+  back 
 }
 
-.well{
-  text-align: center;
-  border-style: solid;
-  border: 5 5 5 5;
-  border-radius: 10px;
-  margin top: 10px;
-
+h1 {
+  font-size: 20vw;
+  font-family: 'Chonburi', cursive;
 }
 
-.question{
+
+label {
+  display: inline;
+}
+
+h3, #next {
   text-align: center;
-  border-style: solid;
-  border: 5 5 5 5;
+  display: inline-block;
   border-radius: 10px;
-  margin-top: 5px;
-  margin-left: 15%;
-  margin-right: 15%;
-  margin-bottom: 5px;
-  padding: 5px;
+}
+
+#result {
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 36;
+  color: #006613;
+}
+
+input[name="option"] {
+  float: left;
+}
+
+#form div {
+  margin: auto;
+  max-width: 205px;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+.button {
+  display: inline-block;
+  padding: 1em;
+  background-color: #79BD9A;
+  text-decoration: none !important;
+  color: white !important;
+}
+
+body {
+  text-align: center;
 }

@@ -10,53 +10,24 @@
 
 <body>
   <div class="container">
-  <div class="jumbotron">
-    <h1>Quiz board on basics of css</h1>
-    <div id="results">
-      <h2>Your scores</h2>
+    <div class="jumbotron">
+      <h1>Quiz board on basics of css</h1>
     </div>
-  </div>
-  <div class="well">
-    <form>
-      <div class="question">
-        <h2>What are style sheets used for?</h2>
-        <input type="radio" id="q1" value="a">a. to script web pages.<br>
-        <input type="radio" id="q1" value="b">b. to control the look and feel of web documents.<br>
-        <input type="radio" id="q1" value="c">c. to define the structure of web documents.<br>
-        <input type="radio" id="q1" value="d">d. to store the keywords of web pages.
-      </div>
-      <div class="question">
-        <h2>Why use css?</h2>
-        <input type="radio" id="q2" value="a">a. it helps make the web page's browser independent.<br>
-        <input type="radio" id="q2" value="b">b. it helps create unique web pages.<br>
-        <input type="radio" id="q2" value="c">c. it allows for the separation of style and content.
-
-      </div>
-      <div class="question">
-        <h2>Select the attribute that organizes the inline styling:</h2>
-        <input type="radio" id="q3" value="a">a. style.<br>
-        <input type="radio" id="q3" value="b">b. id.<br>
-        <input type="radio" id="q3" value="c">c. class.
-      </div>
-      <div class="question">
-        <h2>Where should the style tag be declared to organize an internal CSS?</h2>
-        <input type="radio" id="q4" value="a">a. external file.<br>
-        <input type="radio" id="q4" value="b">b. body.<br>
-        <input type="radio" id="q4" value="c">c. head.
-      </div>
-      <div class="question">
-        <h2>From the three types of styling, which one is the most useful in terms of website optimization?</h2>
-        <input type="radio" id="q5" value="a">a. Inline<br>
-        <input type="radio" id="q5" value="b">b. Internal.<br>
-        <input type="radio" id="q5" value="c">c. External.
-      </div>
-    </form>
-    <button type="submit" onclick="submit()">Submit Quiz</button>
 
 
+    <a href="#" id="start" class="btn btn-primary btn-lg">Let's Begin</a>
 
-  </div>
+    <div class="well">
+      <h3 id="question"></h3>
+      <br /><br />
+      <form id="form">
 
+      </form>
+      <br />
+      <a href="#" id="next" class="button">Next</a><br />
+
+    </div>
+    <div id="result"></div>
   </div>
 
   <script src="js/jquery-3.3.1.js"></script>
