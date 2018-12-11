@@ -10,10 +10,10 @@ All you need to do after opening the page is to click on the radio buttons on th
 
 ## BDD
 
-1. User should open up the page.
+1. User should open up the page w.
 2. Answer all questions in form provided.
-3. The results of the performance will pop up as an alert indicating how he scored out of the total number of questions.
-4. The output will display at the top of the page.
+3. The results of the performance will display after the last submission.
+
 
 ## Author Information
 
